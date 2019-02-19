@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2155,6 +2155,10 @@
 <text x="30.4165" y="11.176" size="1.27" layer="26" font="vector" rot="MR0">BritNerf
 5V Reg Board
 TO-3 Version</text>
+<text x="39.624" y="24.638" size="0.8128" layer="25" font="vector" ratio="12" align="center">+ | CAP | -</text>
+<text x="9.144" y="24.638" size="0.8128" layer="25" font="vector" ratio="12" align="center">+ | CAP | -</text>
+<text x="46.736" y="21.082" size="1.6764" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">OUTPUT</text>
+<text x="3.556" y="13.97" size="1.6764" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">INPUT</text>
 </plain>
 <libraries>
 <library name="v-reg">
@@ -3519,19 +3523,19 @@ design rules under a new name.</description>
 </element>
 <element name="VBATT" library="wirepad" package="4,16O1,6" value="" x="2.54" y="22.86" smashed="yes">
 <attribute name="VALUE" x="2.54" y="22.86" size="0.0254" layer="27"/>
-<attribute name="NAME" x="1.71" y="18.71" size="1.27" layer="25"/>
+<attribute name="NAME" x="2.98" y="19.726" size="1.016" layer="25" align="center"/>
 </element>
 <element name="GND" library="wirepad" package="4,16O1,6" value="" x="2.54" y="2.54" smashed="yes">
 <attribute name="VALUE" x="2.54" y="2.54" size="0.0254" layer="27"/>
-<attribute name="NAME" x="1.71" y="5.375" size="1.27" layer="25"/>
+<attribute name="NAME" x="2.472" y="5.629" size="1.016" layer="25" align="center"/>
 </element>
 <element name="5V" library="wirepad" package="4,16O1,6" value="" x="45.72" y="13.335" smashed="yes">
 <attribute name="VALUE" x="45.72" y="13.335" size="0.0254" layer="27"/>
-<attribute name="NAME" x="44.89" y="9.185" size="1.27" layer="25"/>
+<attribute name="NAME" x="45.652" y="9.947" size="1.016" layer="25" align="center"/>
 </element>
 <element name="0V" library="wirepad" package="4,16O1,6" value="" x="45.72" y="2.54" smashed="yes">
 <attribute name="VALUE" x="45.72" y="2.54" size="0.0254" layer="27"/>
-<attribute name="NAME" x="44.89" y="5.375" size="1.27" layer="25"/>
+<attribute name="NAME" x="45.652" y="5.629" size="1.016" layer="25" align="center"/>
 </element>
 <element name="R1" library="resistor" package="0207/7" value="270R" x="10.16" y="2.54" smashed="yes">
 <attribute name="VALUE" x="9.906" y="2.4638" size="1.27" layer="27" ratio="10" rot="R180" align="center"/>
