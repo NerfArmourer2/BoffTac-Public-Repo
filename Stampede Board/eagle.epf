@@ -385,7 +385,7 @@ UsedLibrary="C:/Users/Boff/Documents/eagle/SparkFun-Eagle-Libraries-master/User-
 
 [Win_1]
 Type="Schematic Editor"
-Loc="-8 -30 591 369"
+Loc="0 0 599 399"
 State=0
 Number=2
 File="stampede-board.sch"
@@ -428,6 +428,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
+Views=" 1: -20.7 -11.9299 77.8928 90.6699"
 Sheet="1"
 
 [Win_2]

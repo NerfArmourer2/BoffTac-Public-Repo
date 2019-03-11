@@ -66,10 +66,6 @@
 <wire x1="-4" y1="3" x2="-4" y2="1" width="0" layer="20"/>
 <wire x1="-4" y1="3" x2="-6" y2="3" width="0" layer="20" curve="180"/>
 <wire x1="-6" y1="1" x2="-4" y2="1" width="0" layer="20" curve="180"/>
-<wire x1="10" y1="8" x2="10" y2="-7" width="0" layer="20"/>
-<wire x1="-10" y1="8" x2="-10" y2="-7" width="0" layer="20"/>
-<wire x1="-10" y1="8" x2="10" y2="8" width="0" layer="20"/>
-<wire x1="-10" y1="-7" x2="10" y2="-7" width="0" layer="20"/>
 <wire x1="-6.5" y1="3.5" x2="-6.5" y2="0.5" width="0.25" layer="17"/>
 <wire x1="-3.5" y1="3.5" x2="-3.5" y2="0.5" width="0.25" layer="17"/>
 <wire x1="-6.5" y1="3.5" x2="-3.5" y2="3.5" width="0.25" layer="17" curve="-180"/>
@@ -116,14 +112,6 @@
 </gates>
 <devices>
 <device name="130-CAN-V1" package="130-MOTOR-CAN">
-<connects>
-<connect gate="G$1" pin="BRIDGE-CAP-1" pad="BRIDGE-CAP-1"/>
-<connect gate="G$1" pin="BRIDGE-CAP-2" pad="BRIDGE-CAP-2"/>
-<connect gate="G$1" pin="CAN-CAP-1" pad="CAN-CAP-1"/>
-<connect gate="G$1" pin="CAN-CAP-2" pad="CAN-CAP-2"/>
-<connect gate="G$1" pin="MOTOR+VE" pad="MOTOR+VE"/>
-<connect gate="G$1" pin="MOTOR-VE" pad="MOTOR-VE"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>

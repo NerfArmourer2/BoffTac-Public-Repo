@@ -608,44 +608,48 @@
 </class>
 </classes>
 <parts>
+<part name="+VE" library="wirepad" deviceset="WIREPAD" device="4,16O1,6" value=""/>
+<part name="-VE" library="wirepad" deviceset="WIREPAD" device="4,16O1,6" value=""/>
 <part name="M1||+VE" library="wirepad" deviceset="WIREPAD" device="4,16O1,6" value=""/>
 <part name="M1||-VE" library="wirepad" deviceset="WIREPAD" device="4,16O1,6" value=""/>
 <part name="M2||-VE" library="wirepad" deviceset="WIREPAD" device="4,16O1,6" value=""/>
 <part name="M2||+VE" library="wirepad" deviceset="WIREPAD" device="4,16O1,6" value=""/>
 <part name="J1" library="Tristan+Robitaille's+Library" deviceset="XT60_FEMALE" device=""/>
-<part name="M2||+VE1" library="wirepad" deviceset="WIREPAD" device="4,16O1,6" value=""/>
-<part name="M2||+VE2" library="wirepad" deviceset="WIREPAD" device="4,16O1,6" value=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
+<instance part="+VE" gate="G$1" x="81.28" y="25.4" rot="R180"/>
+<instance part="-VE" gate="G$1" x="81.28" y="50.8" rot="R180"/>
 <instance part="M1||+VE" gate="G$1" x="53.34" y="58.42" rot="R270"/>
 <instance part="M1||-VE" gate="G$1" x="38.1" y="58.42" rot="R270"/>
 <instance part="M2||-VE" gate="G$1" x="55.88" y="17.78" rot="R90"/>
-<instance part="M2||+VE" gate="G$1" x="38.1" y="12.7" rot="R90"/>
+<instance part="M2||+VE" gate="G$1" x="38.1" y="17.78" rot="R90"/>
 <instance part="J1" gate="G$1" x="83.82" y="38.1" rot="R180"/>
-<instance part="M2||+VE1" gate="G$1" x="48.26" y="17.78" rot="R90"/>
-<instance part="M2||+VE2" gate="G$1" x="30.48" y="17.78" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="N$1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="-VE" gate="G$1" pin="P"/>
+<wire x1="78.74" y1="40.64" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="M2||-VE" gate="G$1" pin="P"/>
 <wire x1="78.74" y1="40.64" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="40.64" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
+<junction x="78.74" y="40.64"/>
 <pinref part="M1||-VE" gate="G$1" pin="P"/>
 <wire x1="38.1" y1="55.88" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="40.64" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
 <junction x="55.88" y="40.64"/>
 </segment>
 </net>
-<net name="VBATT" class="0">
+<net name="N$3" class="0">
 <segment>
+<pinref part="+VE" gate="G$1" pin="P"/>
 <pinref part="M1||+VE" gate="G$1" pin="P"/>
 <wire x1="78.74" y1="25.4" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="25.4" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
@@ -654,13 +658,8 @@
 <wire x1="38.1" y1="25.4" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
 <junction x="53.34" y="25.4"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="20.32" x2="38.1" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="35.56" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="M2||+VE2" gate="G$1" pin="P"/>
-<pinref part="M2||+VE1" gate="G$1" pin="P"/>
-<wire x1="38.1" y1="20.32" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="20.32" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
-<junction x="38.1" y="20.32"/>
+<junction x="78.74" y="25.4"/>
 </segment>
 </net>
 </nets>
