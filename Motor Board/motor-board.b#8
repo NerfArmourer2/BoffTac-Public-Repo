@@ -151,8 +151,30 @@
 <wire x1="60" y1="0" x2="60" y2="22" width="0" layer="20"/>
 <wire x1="60" y1="22" x2="0" y2="22" width="0" layer="20"/>
 <wire x1="0" y1="22" x2="0" y2="0" width="0" layer="20"/>
-<hole x="7" y="11" drill="6"/>
-<hole x="52" y="11" drill="6"/>
+<wire x1="7" y1="14" x2="13" y2="14" width="0" layer="20"/>
+<wire x1="7" y1="8" x2="13" y2="8" width="0" layer="20"/>
+<wire x1="13" y1="8" x2="13" y2="14" width="0" layer="20" curve="180"/>
+<wire x1="7" y1="14" x2="7" y2="8" width="0" layer="20" curve="180"/>
+<wire x1="5" y1="18" x2="9" y2="18" width="0" layer="20"/>
+<wire x1="5" y1="16" x2="9" y2="16" width="0" layer="20"/>
+<wire x1="9" y1="16" x2="9" y2="18" width="0" layer="20" curve="180"/>
+<wire x1="5" y1="18" x2="5" y2="16" width="0" layer="20" curve="180"/>
+<wire x1="11" y1="6" x2="15" y2="6" width="0" layer="20"/>
+<wire x1="11" y1="4" x2="15" y2="4" width="0" layer="20"/>
+<wire x1="15" y1="4" x2="15" y2="6" width="0" layer="20" curve="180"/>
+<wire x1="11" y1="6" x2="11" y2="4" width="0" layer="20" curve="180"/>
+<wire x1="54" y1="14" x2="48" y2="14" width="0" layer="20"/>
+<wire x1="54" y1="8" x2="48" y2="8" width="0" layer="20"/>
+<wire x1="48" y1="8" x2="48" y2="14" width="0" layer="20" curve="-180"/>
+<wire x1="54" y1="14" x2="54" y2="8" width="0" layer="20" curve="-180"/>
+<wire x1="56" y1="18" x2="52" y2="18" width="0" layer="20"/>
+<wire x1="56" y1="16" x2="52" y2="16" width="0" layer="20"/>
+<wire x1="52" y1="16" x2="52" y2="18" width="0" layer="20" curve="-180"/>
+<wire x1="56" y1="18" x2="56" y2="16" width="0" layer="20" curve="-180"/>
+<wire x1="50" y1="6" x2="46" y2="6" width="0" layer="20"/>
+<wire x1="50" y1="4" x2="46" y2="4" width="0" layer="20"/>
+<wire x1="46" y1="4" x2="46" y2="6" width="0" layer="20" curve="-180"/>
+<wire x1="50" y1="6" x2="50" y2="4" width="0" layer="20" curve="-180"/>
 </plain>
 <libraries>
 <library name="wirepad">
@@ -374,32 +396,40 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="+VE" library="wirepad" package="4,16O1,6" value="" x="22" y="5"/>
-<element name="-VE" library="wirepad" package="4,16O1,6" value="" x="38" y="5"/>
-<element name="M1||+VE" library="wirepad" package="4,16O1,6" value="" x="15" y="16"/>
-<element name="M1||-VE" library="wirepad" package="4,16O1,6" value="" x="7.33" y="4.89"/>
-<element name="M2||+VE" library="wirepad" package="4,16O1,6" value="" x="50.95" y="6.89"/>
-<element name="M2||-VE" library="wirepad" package="4,16O1,6" value="" x="52.22" y="19.24"/>
-<element name="J1" library="Tristan+Robitaille's+Library" package="XT60_FEMALE" value="" x="33" y="19"/>
+<element name="M1||+VE" library="wirepad" package="4,16O1,6" value="" x="29" y="16"/>
+<element name="M1||-VE" library="wirepad" package="4,16O1,6" value="" x="23.33" y="11.89"/>
+<element name="M2||+VE" library="wirepad" package="4,16O1,6" value="" x="56" y="17"/>
+<element name="M2||-VE" library="wirepad" package="4,16O1,6" value="" x="40.22" y="9.24"/>
+<element name="J1" library="Tristan+Robitaille's+Library" package="XT60_FEMALE" value="" x="29" y="5"/>
+<element name="M2||+VE1" library="wirepad" package="4,16O1,6" value="" x="53.5" y="17"/>
+<element name="M2||+VE2" library="wirepad" package="4,16O1,6" value="" x="51" y="17"/>
 </elements>
 <signals>
-<signal name="N$1">
+<signal name="GND">
 <contactref element="J1" pad="-"/>
-<contactref element="-VE" pad="1"/>
 <contactref element="M2||-VE" pad="1"/>
 <contactref element="M1||-VE" pad="1"/>
-<wire x1="38" y1="5" x2="52.22" y2="19.24" width="0" layer="19" extent="1-1"/>
-<wire x1="7.33" y1="4.89" x2="38" y2="5" width="0" layer="19" extent="1-1"/>
-<wire x1="29.45" y1="19" x2="7.33" y2="4.89" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="16" isolate="0.3048">
+<vertex x="0" y="22"/>
+<vertex x="60" y="22"/>
+<vertex x="60" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
 </signal>
-<signal name="N$3">
-<contactref element="+VE" pad="1"/>
+<signal name="VBATT">
 <contactref element="M1||+VE" pad="1"/>
 <contactref element="M2||+VE" pad="1"/>
 <contactref element="J1" pad="+"/>
-<wire x1="22" y1="5" x2="50.95" y2="6.89" width="0" layer="19" extent="1-1"/>
-<wire x1="15" y1="16" x2="22" y2="5" width="0" layer="19" extent="1-1"/>
-<wire x1="36.55" y1="19" x2="22" y2="5" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="1" isolate="0.3048">
+<vertex x="0" y="22"/>
+<vertex x="60" y="22"/>
+<vertex x="60" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
+<contactref element="M2||+VE2" pad="1"/>
+<contactref element="M2||+VE1" pad="1"/>
+<wire x1="53.5" y1="17" x2="56" y2="17" width="0" layer="19" extent="1-1"/>
+<wire x1="51" y1="17" x2="53.5" y2="17" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
