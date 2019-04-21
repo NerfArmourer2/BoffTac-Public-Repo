@@ -151,6 +151,19 @@
 <wire x1="60" y1="0" x2="60" y2="22" width="0" layer="20"/>
 <wire x1="0" y1="22" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="22" x2="60" y2="22" width="0" layer="20"/>
+<text x="19" y="11" size="1" layer="25" ratio="12" rot="R90" align="center">[+ |CAP2| -]</text>
+<text x="25" y="19.5" size="1" layer="25" ratio="12" align="bottom-center">[Flyback Diode]</text>
+<text x="37" y="20" size="1" layer="25" ratio="12" rot="R180" align="center">[+ |CAP1| -]</text>
+<text x="41" y="11" size="1" layer="25" ratio="12" rot="R270" align="center">[+ |CAP3| -]</text>
+<text x="8" y="19.5" size="1.2" layer="25" ratio="12" align="bottom-center">^^^ FRONT ^^^</text>
+<text x="52" y="19.5" size="1.2" layer="25" ratio="12" align="bottom-center">^^^ FRONT ^^^</text>
+<text x="31" y="1.5" size="1.2" layer="25" ratio="12" align="bottom-center">- | INPUT | +</text>
+<text x="32.5" y="11" size="0.6" layer="25" ratio="12" align="bottom-center">Solder direct if not using XT60</text>
+<text x="30" y="9" size="1.2" layer="25" ratio="12" align="bottom-center">[XT60]</text>
+<text x="39.5" y="6" size="2.5" layer="25" ratio="12" align="center">+</text>
+<text x="21" y="6" size="2.5" layer="25" ratio="12" rot="R90" align="center">-</text>
+<text x="30" y="13" size="1.2" layer="25" ratio="12" align="bottom-center">BritNerf Motor Board v0.1
+[Optional Components]</text>
 </plain>
 <libraries>
 <library name="Tristan+Robitaille's+Library">
@@ -1533,17 +1546,33 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="Tristan+Robitaille's+Library" package="XT60_FEMALE" value="" x="30" y="6"/>
-<element name="TOP-MOTOR" library="130-can" package="130-MOTOR-CAN" value="" x="20" y="-38"/>
-<element name="BOTTOM-MOTOR" library="130-can" package="130-MOTOR-CAN" value="" x="20" y="-71"/>
-<element name="C1" library="resistor" package="C050-024X044" value="" x="9" y="-94"/>
-<element name="D1" library="diode" package="DO41-10" value="RGP10" x="14" y="-109"/>
-<element name="C2" library="resistor" package="C050-024X044" value="" x="9" y="-124"/>
-<element name="C3" library="resistor" package="C050-024X044" value="" x="9" y="-138"/>
-<element name="PAD1" library="wirepad" package="SMD1,27-2,54" value="" x="-2" y="-140"/>
-<element name="PAD2" library="wirepad" package="SMD1,27-2,54" value="" x="-6" y="-140"/>
-<element name="PAD3" library="wirepad" package="SMD1,27-2,54" value="" x="-10" y="-140"/>
-<element name="PAD4" library="wirepad" package="SMD1,27-2,54" value="" x="-14" y="-140"/>
+<element name="J1" library="Tristan+Robitaille's+Library" package="XT60_FEMALE" value="" x="30" y="6" smashed="yes">
+<attribute name="VALUE" x="37.8675" y="10.94" size="1.27" layer="27" align="bottom-right"/>
+</element>
+<element name="TOP-MOTOR" library="130-can" package="130-MOTOR-CAN" value="" x="8" y="11" rot="R90"/>
+<element name="BOTTOM-MOTOR" library="130-can" package="130-MOTOR-CAN" value="" x="53" y="11" smashed="yes" rot="R90"/>
+<element name="C1" library="resistor" package="C050-024X044" value="" x="37" y="18" smashed="yes">
+<attribute name="VALUE" x="34.841" y="15.333" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="D1" library="diode" package="DO41-10" value="RGP10" x="25" y="18" smashed="yes"/>
+<element name="C2" library="resistor" package="C050-024X044" value="" x="43" y="11" smashed="yes" rot="R90">
+<attribute name="VALUE" x="45.667" y="8.841" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C3" library="resistor" package="C050-024X044" value="" x="17" y="11" smashed="yes" rot="R270">
+<attribute name="VALUE" x="14.333" y="13.159" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="PAD1" library="wirepad" package="SMD1,27-2,54" value="" x="2" y="6" smashed="yes">
+<attribute name="VALUE" x="2" y="6" size="0.0254" layer="27"/>
+</element>
+<element name="PAD2" library="wirepad" package="SMD1,27-2,54" value="" x="3" y="16" smashed="yes" rot="R270">
+<attribute name="VALUE" x="3" y="16" size="0.0254" layer="27" rot="R270"/>
+</element>
+<element name="PAD3" library="wirepad" package="SMD1,27-2,54" value="" x="56" y="6" smashed="yes" rot="R90">
+<attribute name="VALUE" x="56" y="6" size="0.0254" layer="27" rot="R90"/>
+</element>
+<element name="PAD4" library="wirepad" package="SMD1,27-2,54" value="" x="58" y="16" smashed="yes" rot="R180">
+<attribute name="VALUE" x="58" y="16" size="0.0254" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1553,35 +1582,6 @@ design rules under a new name.</description>
 <vertex x="60" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-</signal>
-<signal name="VBATT">
-<polygon width="0.254" layer="1" isolate="0.3048">
-<vertex x="0" y="22"/>
-<vertex x="60" y="22"/>
-<vertex x="60" y="0"/>
-<vertex x="0" y="0"/>
-</polygon>
-</signal>
-<signal name="N$3">
-<contactref element="BOTTOM-MOTOR" pad="MOTOR+VE"/>
-<contactref element="TOP-MOTOR" pad="MOTOR+VE"/>
-<contactref element="J1" pad="+"/>
-<contactref element="D1" pad="C"/>
-<contactref element="C1" pad="2"/>
-<contactref element="C2" pad="1"/>
-<contactref element="C3" pad="2"/>
-<contactref element="PAD3" pad="1"/>
-<contactref element="PAD1" pad="1"/>
-<wire x1="-2" y1="-140" x2="-10" y2="-140" width="0" layer="19" extent="1-1"/>
-<wire x1="11.54" y1="-138" x2="-2" y2="-140" width="0" layer="19" extent="1-1"/>
-<wire x1="6.46" y1="-124" x2="11.54" y2="-138" width="0" layer="19" extent="1-1"/>
-<wire x1="8.92" y1="-109" x2="6.46" y2="-124" width="0" layer="19" extent="1-1"/>
-<wire x1="11.54" y1="-94" x2="8.92" y2="-109" width="0" layer="19" extent="1-1"/>
-<wire x1="15" y1="-69" x2="11.54" y2="-94" width="0" layer="19" extent="1-1"/>
-<wire x1="15" y1="-36" x2="15" y2="-69" width="0" layer="19" extent="1-1"/>
-<wire x1="33.55" y1="6" x2="15" y2="-36" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$1">
 <contactref element="TOP-MOTOR" pad="MOTOR-VE"/>
 <contactref element="BOTTOM-MOTOR" pad="MOTOR-VE"/>
 <contactref element="J1" pad="-"/>
@@ -1591,16 +1591,39 @@ design rules under a new name.</description>
 <contactref element="C3" pad="1"/>
 <contactref element="PAD2" pad="1"/>
 <contactref element="PAD4" pad="1"/>
-<wire x1="-6" y1="-140" x2="-14" y2="-140" width="0" layer="19" extent="1-1"/>
-<wire x1="6.46" y1="-138" x2="-6" y2="-140" width="0" layer="19" extent="1-1"/>
-<wire x1="11.54" y1="-124" x2="6.46" y2="-138" width="0" layer="19" extent="1-1"/>
-<wire x1="19.08" y1="-109" x2="11.54" y2="-124" width="0" layer="19" extent="1-1"/>
-<wire x1="6.46" y1="-94" x2="19.08" y2="-109" width="0" layer="19" extent="1-1"/>
-<wire x1="25" y1="-72" x2="6.46" y2="-94" width="0" layer="19" extent="1-1"/>
-<wire x1="25" y1="-39" x2="25" y2="-72" width="0" layer="19" extent="1-1"/>
-<wire x1="26.45" y1="6" x2="25" y2="-39" width="0" layer="19" extent="1-1"/>
+<wire x1="54" y1="16" x2="43" y2="16" width="1.5" layer="1"/>
+<wire x1="43" y1="16" x2="43" y2="13.54" width="1.5" layer="1"/>
+<wire x1="58" y1="16" x2="54" y2="16" width="1.5" layer="1"/>
+<wire x1="3" y1="16" x2="9" y2="16" width="1.5" layer="1"/>
+<wire x1="17" y1="13.54" x2="17" y2="16" width="1.5" layer="1"/>
+<wire x1="17" y1="16" x2="9" y2="16" width="1.5" layer="1"/>
+</signal>
+<signal name="VBATT">
+<polygon width="0.254" layer="1" isolate="0.3048">
+<vertex x="0" y="22"/>
+<vertex x="60" y="22"/>
+<vertex x="60" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
+<contactref element="BOTTOM-MOTOR" pad="MOTOR+VE"/>
+<contactref element="TOP-MOTOR" pad="MOTOR+VE"/>
+<contactref element="J1" pad="+"/>
+<contactref element="D1" pad="C"/>
+<contactref element="C1" pad="2"/>
+<contactref element="C2" pad="1"/>
+<contactref element="C3" pad="2"/>
+<contactref element="PAD3" pad="1"/>
+<contactref element="PAD1" pad="1"/>
+<wire x1="56" y1="6" x2="51" y2="6" width="1.5" layer="1"/>
+<wire x1="2" y1="6" x2="6" y2="6" width="1.5" layer="1"/>
 </signal>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
