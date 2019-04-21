@@ -97,7 +97,7 @@
 <gate name="G$1" symbol="130-MOTOR-CAN" x="-25.4" y="5.08"/>
 </gates>
 <devices>
-<device name="130-CAN-V1" package="130-MOTOR-CAN">
+<device name="130-MOTOR-CAN" package="130-MOTOR-CAN">
 <technologies>
 <technology name=""/>
 </technologies>

@@ -4057,24 +4057,24 @@ fast-recovery rectifier</description>
 <wire x1="3" y1="-1.5" x2="3" y2="2.5" width="0" layer="20"/>
 <wire x1="3" y1="2.5" x2="-3" y2="2.5" width="0" layer="20" curve="180"/>
 <wire x1="-3" y1="-1.5" x2="3" y2="-1.5" width="0" layer="20" curve="180"/>
+<wire x1="-10" y1="3" x2="-10" y2="1" width="0" layer="20"/>
 <wire x1="-8" y1="3" x2="-8" y2="1" width="0" layer="20"/>
-<wire x1="-6" y1="3" x2="-6" y2="1" width="0" layer="20"/>
-<wire x1="-6" y1="3" x2="-8" y2="3" width="0" layer="20" curve="180"/>
-<wire x1="-8" y1="1" x2="-6" y2="1" width="0" layer="20" curve="180"/>
-<wire x1="-8.5" y1="3.5" x2="-8.5" y2="0.5" width="0.25" layer="17"/>
-<wire x1="-5.5" y1="3.5" x2="-5.5" y2="0.5" width="0.25" layer="17"/>
-<wire x1="-8.5" y1="3.5" x2="-5.5" y2="3.5" width="0.25" layer="17" curve="-180"/>
-<wire x1="-8.5" y1="0.5" x2="-5.5" y2="0.5" width="0.25" layer="17" curve="180"/>
-<wire x1="5.5" y1="0.5" x2="5.5" y2="-2.5" width="0.25" layer="17"/>
-<wire x1="8.5" y1="0.5" x2="8.5" y2="-2.5" width="0.25" layer="17"/>
-<wire x1="5.5" y1="0.5" x2="8.5" y2="0.5" width="0.25" layer="17" curve="-180"/>
-<wire x1="5.5" y1="-2.5" x2="8.5" y2="-2.5" width="0.25" layer="17" curve="180"/>
-<wire x1="6" y1="0" x2="6" y2="-2" width="0" layer="20"/>
+<wire x1="-8" y1="3" x2="-10" y2="3" width="0" layer="20" curve="180"/>
+<wire x1="-10" y1="1" x2="-8" y2="1" width="0" layer="20" curve="180"/>
+<wire x1="-10.5" y1="3.5" x2="-10.5" y2="0.5" width="0.25" layer="17"/>
+<wire x1="-7.5" y1="3.5" x2="-7.5" y2="0.5" width="0.25" layer="17"/>
+<wire x1="-10.5" y1="3.5" x2="-7.5" y2="3.5" width="0.25" layer="17" curve="-180"/>
+<wire x1="-10.5" y1="0.5" x2="-7.5" y2="0.5" width="0.25" layer="17" curve="180"/>
+<wire x1="7.5" y1="0.5" x2="7.5" y2="-2.5" width="0.25" layer="17"/>
+<wire x1="10.5" y1="0.5" x2="10.5" y2="-2.5" width="0.25" layer="17"/>
+<wire x1="7.5" y1="0.5" x2="10.5" y2="0.5" width="0.25" layer="17" curve="-180"/>
+<wire x1="7.5" y1="-2.5" x2="10.5" y2="-2.5" width="0.25" layer="17" curve="180"/>
 <wire x1="8" y1="0" x2="8" y2="-2" width="0" layer="20"/>
-<wire x1="8" y1="0" x2="6" y2="0" width="0" layer="20" curve="180"/>
-<wire x1="6" y1="-2" x2="8" y2="-2" width="0" layer="20" curve="180"/>
-<pad name="MOTOR+VE" x="-7" y="2" drill="2" diameter="3" shape="long" rot="R90"/>
-<pad name="MOTOR-VE" x="7" y="-1" drill="2" diameter="3" shape="long" rot="R90"/>
+<wire x1="10" y1="0" x2="10" y2="-2" width="0" layer="20"/>
+<wire x1="10" y1="0" x2="8" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="8" y1="-2" x2="10" y2="-2" width="0" layer="20" curve="180"/>
+<pad name="MOTOR+VE" x="-9" y="2" drill="2" diameter="3" shape="long" rot="R90"/>
+<pad name="MOTOR-VE" x="9" y="-1" drill="2" diameter="3" shape="long" rot="R90"/>
 </package>
 </packages>
 <symbols>
