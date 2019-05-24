@@ -162,7 +162,7 @@
 <text x="30" y="9" size="1.2" layer="25" ratio="12" align="bottom-center">[XT60]</text>
 <text x="39.5" y="6" size="2.5" layer="25" ratio="12" align="center">+</text>
 <text x="21" y="6" size="2.5" layer="25" ratio="12" rot="R90" align="center">-</text>
-<text x="30" y="13" size="1.2" layer="26" ratio="12" rot="MR0" align="bottom-center">BritNerf Motor Board v0.2
+<text x="30" y="13" size="1.2" layer="26" ratio="12" rot="MR0" align="bottom-center">BritNerf Motor Board v0.3
 [Optional Components]</text>
 <rectangle x1="29.035" y1="12.765" x2="29.115" y2="12.775" layer="25"/>
 <rectangle x1="29.435" y1="12.765" x2="29.535" y2="12.775" layer="25"/>

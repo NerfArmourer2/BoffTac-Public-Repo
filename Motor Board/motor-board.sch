@@ -4057,24 +4057,24 @@ fast-recovery rectifier</description>
 <wire x1="3" y1="-1.5" x2="3" y2="2.5" width="0" layer="20"/>
 <wire x1="3" y1="2.5" x2="-3" y2="2.5" width="0" layer="20" curve="180"/>
 <wire x1="-3" y1="-1.5" x2="3" y2="-1.5" width="0" layer="20" curve="180"/>
-<wire x1="-10" y1="3" x2="-10" y2="1" width="0" layer="20"/>
-<wire x1="-8" y1="3" x2="-8" y2="1" width="0" layer="20"/>
-<wire x1="-8" y1="3" x2="-10" y2="3" width="0" layer="20" curve="180"/>
-<wire x1="-10" y1="1" x2="-8" y2="1" width="0" layer="20" curve="180"/>
-<wire x1="-10.5" y1="3.5" x2="-10.5" y2="0.5" width="0.25" layer="17"/>
-<wire x1="-7.5" y1="3.5" x2="-7.5" y2="0.5" width="0.25" layer="17"/>
-<wire x1="-10.5" y1="3.5" x2="-7.5" y2="3.5" width="0.25" layer="17" curve="-180"/>
-<wire x1="-10.5" y1="0.5" x2="-7.5" y2="0.5" width="0.25" layer="17" curve="180"/>
-<wire x1="7.5" y1="0.5" x2="7.5" y2="-2.5" width="0.25" layer="17"/>
-<wire x1="10.5" y1="0.5" x2="10.5" y2="-2.5" width="0.25" layer="17"/>
-<wire x1="7.5" y1="0.5" x2="10.5" y2="0.5" width="0.25" layer="17" curve="-180"/>
-<wire x1="7.5" y1="-2.5" x2="10.5" y2="-2.5" width="0.25" layer="17" curve="180"/>
-<wire x1="8" y1="0" x2="8" y2="-2" width="0" layer="20"/>
-<wire x1="10" y1="0" x2="10" y2="-2" width="0" layer="20"/>
-<wire x1="10" y1="0" x2="8" y2="0" width="0" layer="20" curve="180"/>
-<wire x1="8" y1="-2" x2="10" y2="-2" width="0" layer="20" curve="180"/>
-<pad name="MOTOR+VE" x="-9" y="2" drill="2" diameter="3" shape="long" rot="R90"/>
-<pad name="MOTOR-VE" x="9" y="-1" drill="2" diameter="3" shape="long" rot="R90"/>
+<wire x1="-9" y1="3" x2="-9" y2="1" width="0" layer="20"/>
+<wire x1="-7" y1="3" x2="-7" y2="1" width="0" layer="20"/>
+<wire x1="-7" y1="3" x2="-9" y2="3" width="0" layer="20" curve="180"/>
+<wire x1="-9" y1="1" x2="-7" y2="1" width="0" layer="20" curve="180"/>
+<wire x1="-9.5" y1="3.5" x2="-9.5" y2="0.5" width="0.25" layer="17"/>
+<wire x1="-6.5" y1="3.5" x2="-6.5" y2="0.5" width="0.25" layer="17"/>
+<wire x1="-9.5" y1="3.5" x2="-6.5" y2="3.5" width="0.25" layer="17" curve="-180"/>
+<wire x1="-9.5" y1="0.5" x2="-6.5" y2="0.5" width="0.25" layer="17" curve="180"/>
+<wire x1="6.5" y1="0.5" x2="6.5" y2="-2.5" width="0.25" layer="17"/>
+<wire x1="9.5" y1="0.5" x2="9.5" y2="-2.5" width="0.25" layer="17"/>
+<wire x1="6.5" y1="0.5" x2="9.5" y2="0.5" width="0.25" layer="17" curve="-180"/>
+<wire x1="6.5" y1="-2.5" x2="9.5" y2="-2.5" width="0.25" layer="17" curve="180"/>
+<wire x1="7" y1="0" x2="7" y2="-2" width="0" layer="20"/>
+<wire x1="9" y1="0" x2="9" y2="-2" width="0" layer="20"/>
+<wire x1="9" y1="0" x2="7" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="7" y1="-2" x2="9" y2="-2" width="0" layer="20" curve="180"/>
+<pad name="MOTOR+VE" x="-8" y="2" drill="2" diameter="3" shape="long" rot="R90"/>
+<pad name="MOTOR-VE" x="8" y="-1" drill="2" diameter="3" shape="long" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -4124,10 +4124,10 @@ fast-recovery rectifier</description>
 <part name="TOP-CAN" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value=""/>
 <part name="BOTTOM-CAN" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value=""/>
 <part name="PAD4" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value=""/>
-<part name="U$1" library="130-can" deviceset="130-CAN-DEVICE" device="130-MOTOR-CAN"/>
-<part name="U$2" library="130-can" deviceset="130-CAN-DEVICE" device="130-MOTOR-CAN"/>
 <part name="PAD-GND" library="wirepad" deviceset="WIREPAD" device="3,81/1,4" value=""/>
 <part name="PAD-VBATT" library="wirepad" deviceset="WIREPAD" device="3,81/1,4" value=""/>
+<part name="U$1" library="130-can" deviceset="130-CAN-DEVICE" device="130-MOTOR-CAN"/>
+<part name="U$2" library="130-can" deviceset="130-CAN-DEVICE" device="130-MOTOR-CAN"/>
 </parts>
 <sheets>
 <sheet>
@@ -4135,18 +4135,18 @@ fast-recovery rectifier</description>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="101.6" y="38.1" rot="R180"/>
-<instance part="C1" gate="G$1" x="68.58" y="43.18" rot="R180"/>
-<instance part="D1" gate="1" x="86.36" y="45.72" rot="R270"/>
+<instance part="C1" gate="G$1" x="68.58" y="55.88" rot="R180"/>
+<instance part="D1" gate="1" x="86.36" y="63.5" rot="R270"/>
 <instance part="C2" gate="G$1" x="15.24" y="66.04" rot="R180"/>
 <instance part="C3" gate="G$1" x="15.24" y="25.4"/>
 <instance part="PAD1" gate="G$1" x="66.04" y="76.2" rot="R180"/>
 <instance part="TOP-CAN" gate="G$1" x="-7.62" y="71.12"/>
 <instance part="BOTTOM-CAN" gate="G$1" x="-10.16" y="17.78"/>
-<instance part="PAD4" gate="G$1" x="66.04" y="20.32" rot="R180"/>
-<instance part="U$1" gate="G$1" x="40.64" y="22.86"/>
-<instance part="U$2" gate="G$1" x="43.18" y="68.58" rot="R180"/>
+<instance part="PAD4" gate="G$1" x="63.5" y="20.32" rot="R180"/>
 <instance part="PAD-GND" gate="G$1" x="106.68" y="53.34" rot="R180"/>
 <instance part="PAD-VBATT" gate="G$1" x="93.98" y="20.32" rot="R90"/>
+<instance part="U$1" gate="G$1" x="43.18" y="71.12"/>
+<instance part="U$2" gate="G$1" x="40.64" y="22.86" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -4154,28 +4154,22 @@ fast-recovery rectifier</description>
 <net name="VBATT" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="MOTOR+VE"/>
 <wire x1="96.52" y1="35.56" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="35.56" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="35.56" x2="68.58" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="35.56" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="35.56" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="MOTOR+VE"/>
 <junction x="53.34" y="35.56"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="66.04" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="60.96" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="35.56" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="35.56" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
 <junction x="68.58" y="35.56"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="60.96" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
-<junction x="53.34" y="60.96"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="35.56" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
-<junction x="30.48" y="35.56"/>
 <pinref part="BOTTOM-CAN" gate="G$1" pin="P"/>
 <wire x1="15.24" y1="35.56" x2="-7.62" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="35.56" x2="-7.62" y2="17.78" width="0.1524" layer="91"/>
@@ -4185,55 +4179,61 @@ fast-recovery rectifier</description>
 <wire x1="-5.08" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
 <junction x="15.24" y="60.96"/>
 <pinref part="D1" gate="1" pin="C"/>
-<wire x1="86.36" y1="43.18" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="60.96" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
 <junction x="86.36" y="35.56"/>
 <pinref part="PAD-VBATT" gate="G$1" pin="P"/>
 <wire x1="93.98" y1="22.86" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
 <junction x="93.98" y="35.56"/>
+<pinref part="U$2" gate="G$1" pin="MOTOR-VE"/>
+<wire x1="30.48" y1="25.4" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<junction x="30.48" y="35.56"/>
+<pinref part="U$1" gate="G$1" pin="MOTOR-VE"/>
+<wire x1="53.34" y1="60.96" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
+<junction x="53.34" y="60.96"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="MOTOR-VE"/>
-<wire x1="33.02" y1="71.12" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="81.28" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="81.28" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="81.28" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="MOTOR-VE"/>
 <wire x1="96.52" y1="53.34" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="20.32" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="20.32" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="30.48" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="30.48" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
 <junction x="78.74" y="81.28"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="48.26" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="60.96" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
 <junction x="71.12" y="81.28"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="81.28" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="81.28" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
-<junction x="33.02" y="81.28"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="20.32" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="12.7" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="12.7" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
 <junction x="55.88" y="20.32"/>
 <pinref part="PAD4" gate="G$1" pin="P"/>
-<wire x1="63.5" y1="20.32" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="PAD1" gate="G$1" pin="P"/>
+<wire x1="60.96" y1="20.32" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="76.2" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
 <junction x="63.5" y="81.28"/>
 <pinref part="D1" gate="1" pin="A"/>
-<wire x1="86.36" y1="48.26" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="66.04" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
 <junction x="86.36" y="81.28"/>
 <pinref part="PAD-GND" gate="G$1" pin="P"/>
 <wire x1="104.14" y1="53.34" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
 <junction x="96.52" y="53.34"/>
+<pinref part="U$2" gate="G$1" pin="MOTOR+VE"/>
+<wire x1="50.8" y1="20.32" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="MOTOR+VE"/>
+<wire x1="33.02" y1="73.66" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
+<junction x="33.02" y="81.28"/>
 </segment>
 </net>
 </nets>
