@@ -2005,7 +2005,7 @@
 <rectangle x1="26.1239" y1="36.1061" x2="28.6639" y2="36.1315" layer="26"/>
 <rectangle x1="29.6291" y1="36.1061" x2="29.7053" y2="36.1315" layer="26"/>
 <text x="21.082" y="30.9372" size="0.0508" layer="26" font="vector" rot="MR0">C:/Users/Boff/Desktop/pcblogobmp.bmp</text>
-<rectangle x1="22" y1="37" x2="29" y2="51" layer="1"/>
+<rectangle x1="22" y1="37" x2="29" y2="51" layer="17"/>
 </plain>
 <libraries>
 <library name="resistor">

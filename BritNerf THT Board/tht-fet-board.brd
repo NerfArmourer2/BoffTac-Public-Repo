@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2007,6 +2007,12 @@
 <text x="21.082" y="30.9372" size="0.0508" layer="26" font="vector" rot="MR0">C:/Users/Boff/Desktop/pcblogobmp.bmp</text>
 <rectangle x1="22" y1="37" x2="29" y2="51" layer="1"/>
 <text x="25" y="34" size="1.778" layer="25" ratio="12" align="bottom-center">v0.3</text>
+<polygon width="0" layer="20">
+<vertex x="22" y="37"/>
+<vertex x="29" y="37"/>
+<vertex x="29" y="51"/>
+<vertex x="22" y="51"/>
+</polygon>
 </plain>
 <libraries>
 <library name="resistor">

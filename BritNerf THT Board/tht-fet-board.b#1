@@ -3497,11 +3497,8 @@ design rules under a new name.</description>
 <wire x1="17.6022" y1="34.29" x2="17.6022" y2="29.2608" width="0.254" layer="1"/>
 <wire x1="17.6022" y1="29.2608" x2="17.78" y2="29.21" width="0.254" layer="1"/>
 <wire x1="17.6022" y1="34.29" x2="17.78" y2="34.29" width="0.254" layer="1"/>
-<wire x1="21.9456" y1="25.6032" x2="22.86" y2="25.6032" width="0.254" layer="1"/>
-<wire x1="18.5166" y1="29.0322" x2="21.9456" y2="25.6032" width="0.254" layer="1"/>
-<wire x1="17.8308" y1="29.0322" x2="18.5166" y2="29.0322" width="0.254" layer="1"/>
-<wire x1="22.86" y1="25.6032" x2="22.86" y2="25.4" width="0.254" layer="1"/>
-<wire x1="17.8308" y1="29.0322" x2="17.78" y2="29.21" width="0.254" layer="1"/>
+<wire x1="17.78" y1="29.21" x2="19.05" y2="29.21" width="0.254" layer="16"/>
+<wire x1="19.05" y1="29.21" x2="22.86" y2="25.4" width="0.254" layer="16"/>
 </signal>
 <signal name="VBATT">
 <contactref element="SWITCH" pad="2"/>

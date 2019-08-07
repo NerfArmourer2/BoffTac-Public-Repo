@@ -2006,6 +2006,7 @@
 <rectangle x1="29.6291" y1="36.1061" x2="29.7053" y2="36.1315" layer="26"/>
 <text x="21.082" y="30.9372" size="0.0508" layer="26" font="vector" rot="MR0">C:/Users/Boff/Desktop/pcblogobmp.bmp</text>
 <rectangle x1="22" y1="37" x2="29" y2="51" layer="1"/>
+<text x="25" y="34" size="1.778" layer="25" ratio="12" align="bottom-center">v0.3</text>
 </plain>
 <libraries>
 <library name="resistor">
