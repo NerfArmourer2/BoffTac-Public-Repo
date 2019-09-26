@@ -157,7 +157,7 @@
 <text x="30" y="3" size="1.2" layer="25" ratio="12" align="bottom-center">[XT60]</text>
 <text x="39.5" y="8" size="2.5" layer="25" ratio="12" align="center">+</text>
 <text x="21" y="8" size="2.5" layer="25" ratio="12" rot="R90" align="center">-</text>
-<text x="30" y="12.5" size="1.2" layer="25" ratio="12" align="bottom-center">BritNerf FET Motor Board v0.1</text>
+<text x="30" y="12" size="1" layer="25" ratio="12" align="bottom-center">BritNerf FET Motor Board v0.2</text>
 <text x="0" y="1.95" size="0.02" layer="25" font="vector" ratio="12" align="bottom-center">Y:/BoffTac/Logo/monologo-w-address.bmp</text>
 <text x="17" y="5" size="1" layer="25" ratio="12" rot="R90" align="center">GND</text>
 <text x="43" y="5" size="1" layer="25" ratio="12" rot="R90" align="center">VBATT</text>
@@ -173,6 +173,14 @@
 <vertex x="35" y="12"/>
 <vertex x="22" y="12"/>
 <vertex x="22" y="5"/>
+</polygon>
+<polygon width="0" layer="20">
+<vertex x="10" y="25"/>
+<vertex x="10" y="20"/>
+<vertex x="18" y="20"/>
+<vertex x="18" y="14"/>
+<vertex x="30" y="14"/>
+<vertex x="30" y="25"/>
 </polygon>
 </plain>
 <libraries>
